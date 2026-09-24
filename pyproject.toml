@@ -1,0 +1,19 @@
+[project]
+name = "ad-drg"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "hj-reachability>=0.7.0",
+    "jax>=0.11.1",
+    "kloppy>=3.19.0",
+    "matplotlib>=3.11.1",
+    "mplsoccer>=1.8.0",
+    "numpy>=2.5.2",
+    "scikit-learn>=1.9.0",
+    "scipy>=1.18.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

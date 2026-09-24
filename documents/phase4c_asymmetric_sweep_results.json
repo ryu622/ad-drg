@@ -1,0 +1,91 @@
+{
+  "a_max_attacker": 9.463174592146512,
+  "v_max_attacker": 8.02011115479253,
+  "v_max_defender": 8.164307990013889,
+  "v_bound": 16.18441914480642,
+  "r_capture": 1.5,
+  "n_events": 1454,
+  "sweep": [
+    {
+      "ratio": 1.0,
+      "a_max_defender": 9.463174592146512,
+      "n_valid": 1448,
+      "frac_v_star_capturable": 0.09046961325966851,
+      "n_defender_suboptimal": 0,
+      "n_attacker_suboptimal": 436,
+      "capture_radius_at_zero_relvel": 1.5,
+      "solve_time_sec": 2.7370681762695312
+    },
+    {
+      "ratio": 1.1,
+      "a_max_defender": 10.409492051361164,
+      "n_valid": 1448,
+      "frac_v_star_capturable": 0.09392265193370165,
+      "n_defender_suboptimal": 0,
+      "n_attacker_suboptimal": 431,
+      "capture_radius_at_zero_relvel": 1.5,
+      "solve_time_sec": 2.3760340213775635
+    },
+    {
+      "ratio": 1.25,
+      "a_max_defender": 11.82896824018314,
+      "n_valid": 1448,
+      "frac_v_star_capturable": 0.106353591160221,
+      "n_defender_suboptimal": 0,
+      "n_attacker_suboptimal": 413,
+      "capture_radius_at_zero_relvel": 1.5,
+      "solve_time_sec": 2.6280629634857178
+    },
+    {
+      "ratio": 1.5,
+      "a_max_defender": 14.194761888219768,
+      "n_valid": 1448,
+      "frac_v_star_capturable": 0.7541436464088398,
+      "n_defender_suboptimal": 568,
+      "n_attacker_suboptimal": 43,
+      "capture_radius_at_zero_relvel": 12.652542372881356,
+      "solve_time_sec": 2.7050650119781494
+    },
+    {
+      "ratio": 2.0,
+      "a_max_defender": 18.926349184293024,
+      "n_valid": 1448,
+      "frac_v_star_capturable": 0.9675414364640884,
+      "n_defender_suboptimal": 834,
+      "n_attacker_suboptimal": 0,
+      "capture_radius_at_zero_relvel": 25.0,
+      "solve_time_sec": 2.912224054336548
+    },
+    {
+      "ratio": 2.5,
+      "a_max_defender": 23.65793648036628,
+      "n_valid": 1448,
+      "frac_v_star_capturable": 0.9896408839779005,
+      "n_defender_suboptimal": 866,
+      "n_attacker_suboptimal": 0,
+      "capture_radius_at_zero_relvel": 25.0,
+      "solve_time_sec": 3.4099860191345215
+    },
+    {
+      "ratio": 3.0,
+      "a_max_defender": 28.389523776439535,
+      "n_valid": 1448,
+      "frac_v_star_capturable": 0.9951657458563536,
+      "n_defender_suboptimal": 874,
+      "n_attacker_suboptimal": 0,
+      "capture_radius_at_zero_relvel": 25.0,
+      "solve_time_sec": 3.649744749069214
+    },
+    {
+      "ratio": 4.0,
+      "a_max_defender": 37.85269836858605,
+      "n_valid": 1448,
+      "frac_v_star_capturable": 0.9986187845303868,
+      "n_defender_suboptimal": 879,
+      "n_attacker_suboptimal": 0,
+      "capture_radius_at_zero_relvel": 25.0,
+      "solve_time_sec": 4.166208982467651
+    }
+  ],
+  "elapsed_sec": 232.64565300941467
+}

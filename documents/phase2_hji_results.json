@@ -1,0 +1,244 @@
+{
+  "calibration": {
+    "v_max_p50": 5.587798903302865,
+    "v_max_p95": 8.087080761173112,
+    "v_max_p99": 8.800048682195818,
+    "v_max_max": 9.381359129636184,
+    "a_max_p50": 6.4807000665531085,
+    "a_max_p95": 9.720288222518208,
+    "a_max_p99": 11.037961507476025,
+    "a_max_max": 11.868297421942692,
+    "n_player_segments": 2839,
+    "n_outlier_speed_removed": 27,
+    "n_outlier_accel_removed": 42,
+    "speed_cutoff": 12.0,
+    "accel_cutoff": 12.0
+  },
+  "a_max_used": 9.720288222518208,
+  "v_max_used": 8.087080761173112,
+  "v_bound_used": 16.174161522346225,
+  "p_bound": 25.0,
+  "grid_shape": [
+    31,
+    31,
+    21,
+    21
+  ],
+  "time_horizon": 3.0,
+  "r_capture": 1.5,
+  "accuracy": "medium",
+  "demo_matching": [
+    {
+      "match_id": "J03WQQ",
+      "dist0": 14.988011876162894,
+      "duration": 11.48,
+      "value": 13.507179260253906,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WQQ",
+      "dist0": 4.023182819609363,
+      "duration": 2.2800000000000002,
+      "value": 1.0958850383758545,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WOY",
+      "dist0": 0.48877397639399894,
+      "duration": 5.08,
+      "value": -0.8669025897979736,
+      "predicted_capturable": true
+    },
+    {
+      "match_id": "J03WOH",
+      "dist0": 6.309080757130944,
+      "duration": 1.56,
+      "value": 3.72023344039917,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WQQ",
+      "dist0": 15.03677159499339,
+      "duration": 3.2,
+      "value": 9.429733276367188,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WMX",
+      "dist0": 18.886929342802127,
+      "duration": 5.28,
+      "value": 17.15130043029785,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WR9",
+      "dist0": 2.8244645510255566,
+      "duration": 2.8000000000000003,
+      "value": 0.4801696538925171,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WOH",
+      "dist0": 1.8662529303392916,
+      "duration": 2.12,
+      "value": 0.17813640832901,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WR9",
+      "dist0": 14.71334428333682,
+      "duration": 4.92,
+      "value": 9.539262771606445,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WN1",
+      "dist0": 11.889007527964647,
+      "duration": 3.2800000000000002,
+      "value": 9.815000534057617,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WOY",
+      "dist0": 6.129404538778622,
+      "duration": 3.16,
+      "value": 3.8569724559783936,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WMX",
+      "dist0": 2.733056896590323,
+      "duration": 3.2,
+      "value": 1.0349572896957397,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WR9",
+      "dist0": 16.014046958842098,
+      "duration": 2.36,
+      "value": 14.524312019348145,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WPY",
+      "dist0": 6.023221729274132,
+      "duration": 2.4,
+      "value": 4.2423906326293945,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WQQ",
+      "dist0": 10.312793026139886,
+      "duration": 7.28,
+      "value": 4.925921440124512,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WOH",
+      "dist0": 0.6708203932499366,
+      "duration": 1.96,
+      "value": -0.7514934539794922,
+      "predicted_capturable": true
+    },
+    {
+      "match_id": "J03WPY",
+      "dist0": 12.818880606355622,
+      "duration": 3.44,
+      "value": 11.158391952514648,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WOY",
+      "dist0": 23.794978461851983,
+      "duration": 1.76,
+      "value": 19.358257293701172,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WQQ",
+      "dist0": 11.970697556951308,
+      "duration": 2.0,
+      "value": 3.8975911140441895,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WMX",
+      "dist0": 8.99262475587635,
+      "duration": 2.56,
+      "value": 3.5127639770507812,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WMX",
+      "dist0": 8.932955837795241,
+      "duration": 1.8,
+      "value": 7.465497016906738,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WOY",
+      "dist0": 3.6543672502910782,
+      "duration": 16.48,
+      "value": 0.6081147789955139,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WPY",
+      "dist0": 14.803958929961935,
+      "duration": 2.24,
+      "value": 8.011914253234863,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WOY",
+      "dist0": 0.9642095207992847,
+      "duration": 1.96,
+      "value": -0.5035318732261658,
+      "predicted_capturable": true
+    },
+    {
+      "match_id": "J03WOY",
+      "dist0": 2.11435569382259,
+      "duration": 2.32,
+      "value": 0.5236690044403076,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WQQ",
+      "dist0": 2.4689471440271906,
+      "duration": 1.8,
+      "value": 0.11235808581113815,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WPY",
+      "dist0": 9.431208830261374,
+      "duration": 1.68,
+      "value": 4.946016311645508,
+      "predicted_capturable": false
+    },
+    {
+      "match_id": "J03WOH",
+      "dist0": 1.429020643657745,
+      "duration": 1.96,
+      "value": -0.15201400220394135,
+      "predicted_capturable": true
+    },
+    {
+      "match_id": "J03WPY",
+      "dist0": 0.8023091673413677,
+      "duration": 1.84,
+      "value": -0.6188870668411255,
+      "predicted_capturable": true
+    },
+    {
+      "match_id": "J03WQQ",
+      "dist0": 5.086698339787805,
+      "duration": 1.76,
+      "value": 3.041788339614868,
+      "predicted_capturable": false
+    }
+  ],
+  "demo_n_capturable": 5,
+  "demo_n_sample": 30
+}

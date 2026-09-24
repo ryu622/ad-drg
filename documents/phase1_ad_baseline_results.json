@@ -1,0 +1,2265 @@
+{
+  "n_init": 20,
+  "n_sample_per_match": 10,
+  "constraints": {
+    "tau_min": 0.9,
+    "beta_bound": 10.0,
+    "f_tau_max": 10.2
+  },
+  "n_events": 70,
+  "n_accurate": 65,
+  "accurate_rate": 0.9285714285714286,
+  "paper_accurate_rate": 0.8849104035065103,
+  "boundary_sticking_rate_overall": 0.4928571428571429,
+  "boundary_sticking_rate_per_param": {
+    "f": 0.2714285714285714,
+    "tau": 0.21428571428571427,
+    "beta": 0.014285714285714285
+  },
+  "error_a_mean": 0.04336746067707798,
+  "error_a_median": 0.025391613624130914,
+  "error_d_mean": 0.03234575927885332,
+  "error_d_median": 0.027521676631983003,
+  "events": [
+    {
+      "match_id": "J03WPY",
+      "attacker": "DFL-OBJ-002GM9",
+      "defender": "DFL-OBJ-J0178P",
+      "n_frames": 117,
+      "attacker_fit": {
+        "f": -1.8649021412224012,
+        "tau": 5.340097020212648,
+        "beta": 0.4156693839533772,
+        "error": 0.08955275495494079,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 4.852847823619655,
+        "tau": 0.9,
+        "beta": 1.0096763004624407,
+        "error": 0.06982642392927686,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WPY",
+      "attacker": "DFL-OBJ-002G68",
+      "defender": "DFL-OBJ-002G5J",
+      "n_frames": 51,
+      "attacker_fit": {
+        "f": 1.326200063720143,
+        "tau": 7.691147269788707,
+        "beta": -0.0315464466654485,
+        "error": 0.05083886833659566,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 5.001031433767202,
+        "tau": 2.0395792441362857,
+        "beta": 0.32565251977186044,
+        "error": 0.014986598626490927,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WPY",
+      "attacker": "DFL-OBJ-002GMO",
+      "defender": "DFL-OBJ-0028BZ",
+      "n_frames": 73,
+      "attacker_fit": {
+        "f": 5.113504918058944,
+        "tau": 1.4891930951102452,
+        "beta": 0.8207788667943963,
+        "error": 0.01640099100061223,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 4.790068663348261,
+        "tau": 1.708731245861359,
+        "beta": 0.8516048721837417,
+        "error": 0.0074152331518746945,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WPY",
+      "attacker": "DFL-OBJ-002595",
+      "defender": "DFL-OBJ-0000F8",
+      "n_frames": 58,
+      "attacker_fit": {
+        "f": 6.004859090553068,
+        "tau": 1.037967701458959,
+        "beta": 0.40568184908017824,
+        "error": 0.03596804020813892,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 1.2883817210845556,
+        "tau": 7.916908332912841,
+        "beta": 2.1570674344341696,
+        "error": 0.013419033175005531,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WPY",
+      "attacker": "DFL-OBJ-J01KJ5",
+      "defender": "DFL-OBJ-002595",
+      "n_frames": 176,
+      "attacker_fit": {
+        "f": 2.1303589025879113,
+        "tau": 2.006863805748491,
+        "beta": 1.1196297169706686,
+        "error": 0.15150125497126118,
+        "accurate": false,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 7.7743344127052625,
+        "tau": 0.9613440189074145,
+        "beta": 0.9771115130343611,
+        "error": 0.020619138559943996,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WPY",
+      "attacker": "DFL-OBJ-00028V",
+      "defender": "DFL-OBJ-002595",
+      "n_frames": 55,
+      "attacker_fit": {
+        "f": 5.970062160313869,
+        "tau": 1.1637417012321674,
+        "beta": -3.084286042481426,
+        "error": 0.02388821133355236,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 4.867066812562046,
+        "tau": 2.0957180964341497,
+        "beta": -0.21410975516119277,
+        "error": 0.030642308185281013,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WPY",
+      "attacker": "DFL-OBJ-002595",
+      "defender": "DFL-OBJ-002FXT",
+      "n_frames": 141,
+      "attacker_fit": {
+        "f": -1.0074347658068064,
+        "tau": 6.4441311846227975,
+        "beta": 0.7552634820748768,
+        "error": 0.07728072654622249,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 1.7957987485887434,
+        "tau": 1.3022337826394452,
+        "beta": 1.0215275190994257,
+        "error": 0.05270737652543237,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WPY",
+      "attacker": "DFL-OBJ-J0178P",
+      "defender": "DFL-OBJ-002GM9",
+      "n_frames": 29,
+      "attacker_fit": {
+        "f": 0.3416052735231735,
+        "tau": 10.934860018954438,
+        "beta": 1.1023649919766878,
+        "error": 0.005342243219004234,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 2.359789580580149,
+        "tau": 4.322419282748202,
+        "beta": 0.9619100989401264,
+        "error": 0.035603762628059,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WPY",
+      "attacker": "DFL-OBJ-0028T3",
+      "defender": "DFL-OBJ-0000NZ",
+      "n_frames": 30,
+      "attacker_fit": {
+        "f": 6.569755946242129,
+        "tau": 1.0903012882069394,
+        "beta": 0.6306350579882019,
+        "error": 0.03328324501408828,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 6.168051644554811,
+        "tau": 1.4706355272607894,
+        "beta": 0.9387839427455137,
+        "error": 0.0134310844859652,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WPY",
+      "attacker": "DFL-OBJ-J01CP5",
+      "defender": "DFL-OBJ-0028T3",
+      "n_frames": 61,
+      "attacker_fit": {
+        "f": 1.8170846080110727,
+        "tau": 2.660203070742094,
+        "beta": 1.1715237677839112,
+        "error": 0.04282830673920391,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 5.264950714938396,
+        "tau": 0.9,
+        "beta": 0.4994677000522174,
+        "error": 0.03826914810220556,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WMX",
+      "attacker": "DFL-OBJ-J01BGM",
+      "defender": "DFL-OBJ-0000IA",
+      "n_frames": 123,
+      "attacker_fit": {
+        "f": 6.660328243622415,
+        "tau": 1.3787487371913074,
+        "beta": 1.1061759160844586,
+        "error": 0.009891839435423731,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 7.610180365470805,
+        "tau": 1.2913252800709383,
+        "beta": 0.8182538260699249,
+        "error": 0.009312824676969719,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WMX",
+      "attacker": "DFL-OBJ-0028BD",
+      "defender": "DFL-OBJ-0026PM",
+      "n_frames": 34,
+      "attacker_fit": {
+        "f": -5.76824993675434,
+        "tau": 0.9,
+        "beta": 1.2363836745864027,
+        "error": 0.015780134729485584,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": -6.046779575068334,
+        "tau": 0.9,
+        "beta": 2.356982389280014,
+        "error": 0.03051603838418505,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WMX",
+      "attacker": "DFL-OBJ-J01APO",
+      "defender": "DFL-OBJ-J01BGM",
+      "n_frames": 49,
+      "attacker_fit": {
+        "f": 0.9064439167349221,
+        "tau": 6.907319126428366,
+        "beta": 1.0735176443757708,
+        "error": 0.011549552637457354,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 6.287399119967869,
+        "tau": 0.9602763576115397,
+        "beta": 0.7990537790904573,
+        "error": 0.002044412823372183,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WMX",
+      "attacker": "DFL-OBJ-J01APO",
+      "defender": "DFL-OBJ-J01BGM",
+      "n_frames": 126,
+      "attacker_fit": {
+        "f": 1.2207313561242785,
+        "tau": 8.355646758456663,
+        "beta": 1.4513304392483624,
+        "error": 0.024411968646931178,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": -1.1771906236668177,
+        "tau": 8.664696943405328,
+        "beta": -5.005373966564258,
+        "error": 0.04134633894842742,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WMX",
+      "attacker": "DFL-OBJ-0028BD",
+      "defender": "DFL-OBJ-J01APO",
+      "n_frames": 149,
+      "attacker_fit": {
+        "f": -1.6008865148280607,
+        "tau": 4.424444054099106,
+        "beta": 0.3564170993954967,
+        "error": 0.06365072057087251,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 6.101220440597276,
+        "tau": 0.9,
+        "beta": 0.8823707188481256,
+        "error": 0.06424240981178571,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WMX",
+      "attacker": "DFL-OBJ-00012X",
+      "defender": "DFL-OBJ-0002AU",
+      "n_frames": 58,
+      "attacker_fit": {
+        "f": -3.0923781810648427,
+        "tau": 0.9,
+        "beta": 1.7442008808331653,
+        "error": 0.026227507713306036,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 4.350460068561968,
+        "tau": 0.9,
+        "beta": -0.270300177351347,
+        "error": 0.03875871658879309,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WMX",
+      "attacker": "DFL-OBJ-0002F5",
+      "defender": "DFL-OBJ-0028BD",
+      "n_frames": 94,
+      "attacker_fit": {
+        "f": 4.140171512049543,
+        "tau": 0.9340940233960207,
+        "beta": 0.8108466681182424,
+        "error": 0.037642260165295816,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 7.870396707396421,
+        "tau": 0.9,
+        "beta": 0.6282153023503136,
+        "error": 0.02334280689318276,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WMX",
+      "attacker": "DFL-OBJ-J01BGM",
+      "defender": "DFL-OBJ-J01APO",
+      "n_frames": 64,
+      "attacker_fit": {
+        "f": 3.7752522562461674,
+        "tau": 2.4901701443558624,
+        "beta": 2.315824609009468,
+        "error": 0.01004257287813239,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 8.733408142593605,
+        "tau": 1.0360688353322256,
+        "beta": 1.6852203494950548,
+        "error": 0.0067305818432434215,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WMX",
+      "attacker": "DFL-OBJ-00012X",
+      "defender": "DFL-OBJ-0027KL",
+      "n_frames": 95,
+      "attacker_fit": {
+        "f": 3.0677193923028927,
+        "tau": 1.8534357686784844,
+        "beta": 1.0346348871410194,
+        "error": 0.0388503251782647,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 8.650846938808558,
+        "tau": 1.1790745229355997,
+        "beta": 0.931866888776886,
+        "error": 0.03827774719110808,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WMX",
+      "attacker": "DFL-OBJ-00012X",
+      "defender": "DFL-OBJ-J01APO",
+      "n_frames": 133,
+      "attacker_fit": {
+        "f": 1.997195646829317,
+        "tau": 0.9,
+        "beta": 1.243147272805954,
+        "error": 0.05920755928564418,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 1.0938672273561643,
+        "tau": 2.3381923176572164,
+        "beta": 0.7840683944700301,
+        "error": 0.03955247725143807,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WN1",
+      "attacker": "DFL-OBJ-J013O2",
+      "defender": "DFL-OBJ-002G4G",
+      "n_frames": 111,
+      "attacker_fit": {
+        "f": 0.33473149186669354,
+        "tau": 18.08142249395156,
+        "beta": 5.206387424476002,
+        "error": 0.049916148932780326,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 6.428721822086571,
+        "tau": 1.412631175308395,
+        "beta": 0.8749583702570164,
+        "error": 0.05517178536576073,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WN1",
+      "attacker": "DFL-OBJ-002GOI",
+      "defender": "DFL-OBJ-0028D6",
+      "n_frames": 60,
+      "attacker_fit": {
+        "f": 3.2471717384780705,
+        "tau": 1.2242967028378853,
+        "beta": 1.7945927869899214,
+        "error": 0.01530442867032406,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 1.4857980598661489,
+        "tau": 3.377368256958137,
+        "beta": 1.9829190290875676,
+        "error": 0.014974854568840743,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WN1",
+      "attacker": "DFL-OBJ-002GBK",
+      "defender": "DFL-OBJ-002GM0",
+      "n_frames": 49,
+      "attacker_fit": {
+        "f": 4.438792384793266,
+        "tau": 2.29792229630416,
+        "beta": 1.1560730655099445,
+        "error": 0.024198028891765144,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 3.69968894073467,
+        "tau": 2.756988533946025,
+        "beta": 1.0508254241133645,
+        "error": 0.02802494024264486,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WN1",
+      "attacker": "DFL-OBJ-002GM0",
+      "defender": "DFL-OBJ-J013O2",
+      "n_frames": 82,
+      "attacker_fit": {
+        "f": -1.0074851626935648,
+        "tau": 4.176396379662637,
+        "beta": -0.873351136276987,
+        "error": 0.07323466437361698,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 4.02893384404033,
+        "tau": 0.9,
+        "beta": 0.8062738115071277,
+        "error": 0.03266331527262891,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WN1",
+      "attacker": "DFL-OBJ-002GOI",
+      "defender": "DFL-OBJ-0028NB",
+      "n_frames": 67,
+      "attacker_fit": {
+        "f": 1.778582539717385,
+        "tau": 2.0529175537870814,
+        "beta": 0.12898410992579468,
+        "error": 0.019645681606702256,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 6.404012871660064,
+        "tau": 1.2765281357768703,
+        "beta": 0.5392000868668274,
+        "error": 0.014611744205796511,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WN1",
+      "attacker": "DFL-OBJ-002G8H",
+      "defender": "DFL-OBJ-0027LO",
+      "n_frames": 51,
+      "attacker_fit": {
+        "f": 5.226916776675707,
+        "tau": 1.4796526921373967,
+        "beta": 0.533637529410179,
+        "error": 0.01709509844628255,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 6.117028516756482,
+        "tau": 1.040731359641813,
+        "beta": 0.8645526843199837,
+        "error": 0.011549856262236641,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WN1",
+      "attacker": "DFL-OBJ-J01B8R",
+      "defender": "DFL-OBJ-0028NB",
+      "n_frames": 49,
+      "attacker_fit": {
+        "f": 3.761132957352707,
+        "tau": 1.4765778273242494,
+        "beta": 1.6283109966152483,
+        "error": 0.009673961034493708,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 7.800065013387775,
+        "tau": 0.9,
+        "beta": 0.8169733585619703,
+        "error": 0.01440575818342169,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WN1",
+      "attacker": "DFL-OBJ-002GAR",
+      "defender": "DFL-OBJ-J01AQV",
+      "n_frames": 28,
+      "attacker_fit": {
+        "f": 1.1130999662474415,
+        "tau": 4.020650878033312,
+        "beta": 0.5182266202308701,
+        "error": 0.0015722777736581737,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 7.210558246886621,
+        "tau": 1.4145922725530218,
+        "beta": 0.05045307536697596,
+        "error": 0.019230660440721418,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WN1",
+      "attacker": "DFL-OBJ-002G02",
+      "defender": "DFL-OBJ-J01AQV",
+      "n_frames": 54,
+      "attacker_fit": {
+        "f": 3.82835844611393,
+        "tau": 2.6643273165172463,
+        "beta": 0.7822939774676352,
+        "error": 0.04009910976455952,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 6.770888906302273,
+        "tau": 1.5064491720024524,
+        "beta": 0.5142048842809176,
+        "error": 0.02332182222285335,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WN1",
+      "attacker": "DFL-OBJ-002GAR",
+      "defender": "DFL-OBJ-0000YV",
+      "n_frames": 77,
+      "attacker_fit": {
+        "f": 2.1131653122357443,
+        "tau": 4.660567056207465,
+        "beta": 1.799678822184281,
+        "error": 0.021437307095078618,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 4.172734920519041,
+        "tau": 2.0109783927408866,
+        "beta": 0.8544546853582784,
+        "error": 0.010300208233768338,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WOH",
+      "attacker": "DFL-OBJ-0028CD",
+      "defender": "DFL-OBJ-J01L1F",
+      "n_frames": 82,
+      "attacker_fit": {
+        "f": -1.3662933341577623,
+        "tau": 5.6359322013472815,
+        "beta": -3.1003058175536964,
+        "error": 0.06482306186744745,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 10.201007913024537,
+        "tau": 0.9,
+        "beta": 0.4619276004582586,
+        "error": 0.09700861739923003,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WOH",
+      "attacker": "DFL-OBJ-0027VS",
+      "defender": "DFL-OBJ-002FXT",
+      "n_frames": 47,
+      "attacker_fit": {
+        "f": 2.2575973010267534,
+        "tau": 2.70900967667405,
+        "beta": 10.0,
+        "error": 0.01486059887295724,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": true
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 3.7967424440199773,
+        "tau": 2.686513531241327,
+        "beta": 1.199060151415547,
+        "error": 0.006734533302073071,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WOH",
+      "attacker": "DFL-OBJ-00006V",
+      "defender": "DFL-OBJ-002GAB",
+      "n_frames": 48,
+      "attacker_fit": {
+        "f": 2.412481824561814,
+        "tau": 4.2280111241080665,
+        "beta": 1.3394873287478504,
+        "error": 0.01310843510097377,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 4.4449530292372135,
+        "tau": 1.8642302833008833,
+        "beta": 0.8256135687799947,
+        "error": 0.003364477281533856,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WOH",
+      "attacker": "DFL-OBJ-0000F8",
+      "defender": "DFL-OBJ-0026UQ",
+      "n_frames": 144,
+      "attacker_fit": {
+        "f": -9.196614127531404,
+        "tau": 1.023330625951661,
+        "beta": 0.3301762140783302,
+        "error": 0.09004947296218802,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 3.9048684378776843,
+        "tau": 2.0709007186120965,
+        "beta": 0.6161947520870669,
+        "error": 0.0477067810268053,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WOH",
+      "attacker": "DFL-OBJ-0026UQ",
+      "defender": "DFL-OBJ-0000F8",
+      "n_frames": 66,
+      "attacker_fit": {
+        "f": -2.777094674638764,
+        "tau": 3.672903226853055,
+        "beta": 0.7261546542147992,
+        "error": 0.11207375037063551,
+        "accurate": false,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": -4.696093626729683,
+        "tau": 2.172018019266807,
+        "beta": 0.5331169241275954,
+        "error": 0.08863594150284307,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WOH",
+      "attacker": "DFL-OBJ-0000F8",
+      "defender": "DFL-OBJ-0027XP",
+      "n_frames": 43,
+      "attacker_fit": {
+        "f": 5.2534836248496894,
+        "tau": 0.9,
+        "beta": 1.1795854770319483,
+        "error": 0.03438115811210432,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 3.619961686578452,
+        "tau": 2.0418034692164775,
+        "beta": 1.1693751062557625,
+        "error": 0.00891549714604159,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WOH",
+      "attacker": "DFL-OBJ-J01CP5",
+      "defender": "DFL-OBJ-0027B0",
+      "n_frames": 46,
+      "attacker_fit": {
+        "f": -2.527997536493166,
+        "tau": 1.5577539294276581,
+        "beta": 0.45108789289468265,
+        "error": 0.011951298197792544,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 0.5608873242590666,
+        "tau": 4.399222989538081,
+        "beta": 0.389818701961278,
+        "error": 0.009966444633084505,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WOH",
+      "attacker": "DFL-OBJ-002GEE",
+      "defender": "DFL-OBJ-00003X",
+      "n_frames": 154,
+      "attacker_fit": {
+        "f": 4.891940900603325,
+        "tau": 0.9,
+        "beta": 0.8675954836122148,
+        "error": 0.06774889432322821,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 4.773417926563695,
+        "tau": 1.246576564714373,
+        "beta": 0.6419689729920766,
+        "error": 0.020989598344147604,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WOH",
+      "attacker": "DFL-OBJ-J014UG",
+      "defender": "DFL-OBJ-002GAB",
+      "n_frames": 68,
+      "attacker_fit": {
+        "f": 4.546710252083433,
+        "tau": 2.103941264116176,
+        "beta": 0.8095251745273757,
+        "error": 0.021363665471010818,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 6.6702939598515645,
+        "tau": 1.0277302041849323,
+        "beta": 0.7087215133631332,
+        "error": 0.01120536727353609,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WOH",
+      "attacker": "DFL-OBJ-0027XP",
+      "defender": "DFL-OBJ-0000NZ",
+      "n_frames": 49,
+      "attacker_fit": {
+        "f": 5.127598322909156,
+        "tau": 1.9892353793290742,
+        "beta": 2.333992167538939,
+        "error": 0.015290204450640976,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": -0.6590662393168283,
+        "tau": 10.47802590781298,
+        "beta": -3.8790816210539365,
+        "error": 0.005572458921409979,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WOY",
+      "attacker": "DFL-OBJ-002FXT",
+      "defender": "DFL-OBJ-00286X",
+      "n_frames": 79,
+      "attacker_fit": {
+        "f": -9.524387246709507,
+        "tau": 0.9,
+        "beta": 0.5734189054988362,
+        "error": 0.06796100676448645,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": -2.73871325343279,
+        "tau": 1.4608826521627252,
+        "beta": 0.12059911881283847,
+        "error": 0.05788926456142427,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WOY",
+      "attacker": "DFL-OBJ-00286X",
+      "defender": "DFL-OBJ-0026RH",
+      "n_frames": 108,
+      "attacker_fit": {
+        "f": 2.5342332569848685,
+        "tau": 4.02488601099614,
+        "beta": 1.119519969363659,
+        "error": 0.03382441188372378,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 2.1678184846534707,
+        "tau": 4.705190959273914,
+        "beta": 1.3107735223875892,
+        "error": 0.049387755589533136,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WOY",
+      "attacker": "DFL-OBJ-J01H9X",
+      "defender": "DFL-OBJ-J01KGY",
+      "n_frames": 91,
+      "attacker_fit": {
+        "f": 2.518553187993797,
+        "tau": 1.9944147766757212,
+        "beta": 1.351480456493684,
+        "error": 0.013656984612172803,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 0.7388000286837465,
+        "tau": 5.893560174658911,
+        "beta": 9.45166014569643,
+        "error": 0.015203997638092567,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WOY",
+      "attacker": "DFL-OBJ-0028KZ",
+      "defender": "DFL-OBJ-002FXT",
+      "n_frames": 62,
+      "attacker_fit": {
+        "f": 4.4164387092632635,
+        "tau": 0.9065833711283492,
+        "beta": 1.0725955150075148,
+        "error": 0.02428618166527218,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 4.962015237103374,
+        "tau": 1.5714705446499295,
+        "beta": 0.734524349766449,
+        "error": 0.027159070131494843,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WOY",
+      "attacker": "DFL-OBJ-0028FW",
+      "defender": "DFL-OBJ-J01GG9",
+      "n_frames": 332,
+      "attacker_fit": {
+        "f": -0.22470291593803834,
+        "tau": 0.9,
+        "beta": 1.4753713853083759,
+        "error": 0.06924943950878784,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": -0.878627541585787,
+        "tau": 0.9,
+        "beta": 0.5910873684464443,
+        "error": 0.08975088637512917,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WOY",
+      "attacker": "DFL-OBJ-J01KJ5",
+      "defender": "DFL-OBJ-002FXA",
+      "n_frames": 70,
+      "attacker_fit": {
+        "f": -4.522132711633808,
+        "tau": 1.0247716014013244,
+        "beta": 0.7373519575828831,
+        "error": 0.03674308476250175,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": -0.965693631246018,
+        "tau": 10.562355723763188,
+        "beta": 0.7845948801531515,
+        "error": 0.0330293267230706,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WOY",
+      "attacker": "DFL-OBJ-002FZB",
+      "defender": "DFL-OBJ-002FXT",
+      "n_frames": 312,
+      "attacker_fit": {
+        "f": -2.6800964333014896,
+        "tau": 0.9,
+        "beta": 0.9703722507744604,
+        "error": 0.337424633792121,
+        "accurate": false,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": -0.811054719506879,
+        "tau": 0.9,
+        "beta": -6.74582546798989,
+        "error": 0.07360785582434264,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WOY",
+      "attacker": "DFL-OBJ-J01KJ5",
+      "defender": "DFL-OBJ-0001IG",
+      "n_frames": 99,
+      "attacker_fit": {
+        "f": -6.592748043976799,
+        "tau": 0.9359537798772586,
+        "beta": 0.974591726225699,
+        "error": 0.08133538479491947,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 1.3017852414516593,
+        "tau": 7.835393774061312,
+        "beta": 1.1476752768356133,
+        "error": 0.06909655667105652,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WOY",
+      "attacker": "DFL-OBJ-0000NZ",
+      "defender": "DFL-OBJ-0026ZT",
+      "n_frames": 102,
+      "attacker_fit": {
+        "f": -1.9842632814858847,
+        "tau": 2.955622133824148,
+        "beta": 0.759794185570849,
+        "error": 0.048193509654807946,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": -1.332126387790048,
+        "tau": 4.45065263287492,
+        "beta": 0.653797300591833,
+        "error": 0.06622148902813511,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WOY",
+      "attacker": "DFL-OBJ-0026ZT",
+      "defender": "DFL-OBJ-0000F8",
+      "n_frames": 32,
+      "attacker_fit": {
+        "f": -5.812035491820632,
+        "tau": 1.0202732070823362,
+        "beta": -1.418455217519845,
+        "error": 0.010169412009328723,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": -4.116181113263676,
+        "tau": 2.4780250702836275,
+        "beta": -2.695028673703236,
+        "error": 0.01362530262363103,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WQQ",
+      "attacker": "DFL-OBJ-J01PRP",
+      "defender": "DFL-OBJ-00008K",
+      "n_frames": 90,
+      "attacker_fit": {
+        "f": -0.43164043315551576,
+        "tau": 0.9,
+        "beta": -0.7438034952886498,
+        "error": 0.13465728476978606,
+        "accurate": false,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 8.79797018827409,
+        "tau": 0.9,
+        "beta": 0.5834755120449461,
+        "error": 0.03681981730115057,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WQQ",
+      "attacker": "DFL-OBJ-002FXT",
+      "defender": "DFL-OBJ-002GN4",
+      "n_frames": 89,
+      "attacker_fit": {
+        "f": 1.5591971224695986,
+        "tau": 6.541828387968442,
+        "beta": 1.0008124847584463,
+        "error": 0.04707441026846133,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 4.372383595171436,
+        "tau": 1.3886073715728338,
+        "beta": 1.143720565842729,
+        "error": 0.041940812914683004,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WQQ",
+      "attacker": "DFL-OBJ-002GM1",
+      "defender": "DFL-OBJ-0002EL",
+      "n_frames": 61,
+      "attacker_fit": {
+        "f": -8.60545515183607,
+        "tau": 0.9200226343962115,
+        "beta": 0.9997236239790218,
+        "error": 0.01294520040023158,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": -6.171120291871771,
+        "tau": 1.6452126527481574,
+        "beta": 0.9513098139051105,
+        "error": 0.02290261735723198,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WQQ",
+      "attacker": "DFL-OBJ-002GMO",
+      "defender": "DFL-OBJ-J014L2",
+      "n_frames": 79,
+      "attacker_fit": {
+        "f": 3.148056997092101,
+        "tau": 3.240093805524018,
+        "beta": 1.7923367850098513,
+        "error": 0.010196344842721883,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 6.554653395004795,
+        "tau": 0.9,
+        "beta": 1.174244523382547,
+        "error": 0.011457551071781489,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WQQ",
+      "attacker": "DFL-OBJ-J014L2",
+      "defender": "DFL-OBJ-J0130T",
+      "n_frames": 63,
+      "attacker_fit": {
+        "f": 4.054009441295037,
+        "tau": 1.7969705759636379,
+        "beta": 1.3936910086031291,
+        "error": 0.010279714749678887,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 4.716390869473401,
+        "tau": 1.6478645822616935,
+        "beta": 1.2823367169517188,
+        "error": 0.007961602768683115,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WQQ",
+      "attacker": "DFL-OBJ-0028LZ",
+      "defender": "DFL-OBJ-002FXT",
+      "n_frames": 288,
+      "attacker_fit": {
+        "f": 1.7357031125336806,
+        "tau": 0.9,
+        "beta": 1.0517889139116678,
+        "error": 0.10860480671333303,
+        "accurate": false,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": -0.13913518347667617,
+        "tau": 3.629168746640537,
+        "beta": -1.0211710916740486,
+        "error": 0.10775245492425273,
+        "accurate": false,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WQQ",
+      "attacker": "DFL-OBJ-0028LZ",
+      "defender": "DFL-OBJ-002G5J",
+      "n_frames": 94,
+      "attacker_fit": {
+        "f": 1.340349505718853,
+        "tau": 2.8397377235504204,
+        "beta": 1.1534063629668483,
+        "error": 0.03879911867140916,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 0.9408183269343925,
+        "tau": 4.034368307890864,
+        "beta": 0.875684907208184,
+        "error": 0.04885785645654703,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WQQ",
+      "attacker": "DFL-OBJ-0000F8",
+      "defender": "DFL-OBJ-0027QN",
+      "n_frames": 46,
+      "attacker_fit": {
+        "f": 1.3699480612526427,
+        "tau": 4.207392257724799,
+        "beta": -2.1815692589896885,
+        "error": 0.021488682916907136,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 6.869963257606217,
+        "tau": 0.9,
+        "beta": -10.0,
+        "error": 0.02931887113785497,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": true
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WQQ",
+      "attacker": "DFL-OBJ-002GN4",
+      "defender": "DFL-OBJ-00008K",
+      "n_frames": 60,
+      "attacker_fit": {
+        "f": -1.1192069187984945,
+        "tau": 5.3379337024068265,
+        "beta": -0.5962193372672836,
+        "error": 0.01773777142865299,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 1.8556906005644798,
+        "tau": 4.023824281070235,
+        "beta": 0.5033841515475624,
+        "error": 0.020739666843189265,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WQQ",
+      "attacker": "DFL-OBJ-0000NZ",
+      "defender": "DFL-OBJ-0027QN",
+      "n_frames": 91,
+      "attacker_fit": {
+        "f": 2.5176734036897783,
+        "tau": 4.051359475114907,
+        "beta": 0.8080051226381973,
+        "error": 0.01369016990214237,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 2.3291827461512855,
+        "tau": 3.824149337305577,
+        "beta": 9.361511058162456,
+        "error": 0.03402507324352676,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WR9",
+      "attacker": "DFL-OBJ-J0130T",
+      "defender": "DFL-OBJ-0025YM",
+      "n_frames": 125,
+      "attacker_fit": {
+        "f": -3.2081709694897973,
+        "tau": 0.9,
+        "beta": 0.8475601992570378,
+        "error": 0.06478727435199311,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": -1.3259508920517786,
+        "tau": 0.9,
+        "beta": 0.9805971447607554,
+        "error": 0.03534870231960977,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WR9",
+      "attacker": "DFL-OBJ-002GMO",
+      "defender": "DFL-OBJ-00265G",
+      "n_frames": 55,
+      "attacker_fit": {
+        "f": 3.311812701014324,
+        "tau": 3.0798843158456557,
+        "beta": 0.7436414891354038,
+        "error": 0.0176672155773617,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 6.996816554499,
+        "tau": 1.4578058347356375,
+        "beta": 0.6592462955284574,
+        "error": 0.010824807558251388,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WR9",
+      "attacker": "DFL-OBJ-00028V",
+      "defender": "DFL-OBJ-0028GO",
+      "n_frames": 35,
+      "attacker_fit": {
+        "f": -2.3156580207561626,
+        "tau": 4.404795466621923,
+        "beta": -6.924178054134183,
+        "error": 0.00814521796744771,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 2.5303355894965374,
+        "tau": 4.0310858474522755,
+        "beta": 1.0311766330155634,
+        "error": 0.0027321156381351925,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WR9",
+      "attacker": "DFL-OBJ-0026WW",
+      "defender": "DFL-OBJ-00008K",
+      "n_frames": 79,
+      "attacker_fit": {
+        "f": 2.0188057680346962,
+        "tau": 5.0273439169115965,
+        "beta": 1.124274935538932,
+        "error": 0.078627292331478,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 2.140678894297571,
+        "tau": 4.764843535756856,
+        "beta": 0.8519490239520906,
+        "error": 0.04930490180010913,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WR9",
+      "attacker": "DFL-OBJ-0025YM",
+      "defender": "DFL-OBJ-00028V",
+      "n_frames": 40,
+      "attacker_fit": {
+        "f": 1.1054640655891008,
+        "tau": 9.226894220276389,
+        "beta": 0.04616853680707093,
+        "error": 0.02724860790279104,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 5.126246378301183,
+        "tau": 1.756503961696302,
+        "beta": -0.5393369423989,
+        "error": 0.008950352003278898,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WR9",
+      "attacker": "DFL-OBJ-00028V",
+      "defender": "DFL-OBJ-0025YM",
+      "n_frames": 69,
+      "attacker_fit": {
+        "f": -2.8704317093905645,
+        "tau": 3.553472446220009,
+        "beta": 0.7118781649590309,
+        "error": 0.08188118347758112,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 0.7821021041234584,
+        "tau": 0.9450578520026167,
+        "beta": 1.3357264528307193,
+        "error": 0.08998893304297166,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    },
+    {
+      "match_id": "J03WR9",
+      "attacker": "DFL-OBJ-00028V",
+      "defender": "DFL-OBJ-0025YM",
+      "n_frames": 47,
+      "attacker_fit": {
+        "f": 4.399658853346803,
+        "tau": 2.318361568614055,
+        "beta": 0.2322903367289628,
+        "error": 0.019378700575930115,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      },
+      "defender_fit": {
+        "f": 6.938793591359739,
+        "tau": 0.9,
+        "beta": 0.8030544073840562,
+        "error": 0.011806256127270216,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WR9",
+      "attacker": "DFL-OBJ-002GM9",
+      "defender": "DFL-OBJ-0025YM",
+      "n_frames": 149,
+      "attacker_fit": {
+        "f": 1.9276441127961164,
+        "tau": 5.103797301300554,
+        "beta": 1.7797089784217681,
+        "error": 0.015447580419738467,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 6.218838681573959,
+        "tau": 0.9,
+        "beta": 1.028958683910286,
+        "error": 0.027884283132471165,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": true,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WR9",
+      "attacker": "DFL-OBJ-0000NZ",
+      "defender": "DFL-OBJ-00265G",
+      "n_frames": 58,
+      "attacker_fit": {
+        "f": 0.8985338097278064,
+        "tau": 10.905054871948675,
+        "beta": 1.1413819005839583,
+        "error": 0.017699571262061252,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 1.6985953371558595,
+        "tau": 6.004961729662243,
+        "beta": 1.0573775691620229,
+        "error": 0.01105577473215333,
+        "accurate": true,
+        "at_bound": {
+          "f": true,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": true
+      }
+    },
+    {
+      "match_id": "J03WR9",
+      "attacker": "DFL-OBJ-0000YE",
+      "defender": "DFL-OBJ-002GM1",
+      "n_frames": 45,
+      "attacker_fit": {
+        "f": 4.021799610775437,
+        "tau": 1.1814356060413151,
+        "beta": -0.5426897775250158,
+        "error": 0.024555719534955795,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      },
+      "defender_fit": {
+        "f": 4.939832765465595,
+        "tau": 1.1152506994717868,
+        "beta": -0.743384652404102,
+        "error": 0.04416007036925202,
+        "accurate": true,
+        "at_bound": {
+          "f": false,
+          "tau": false,
+          "beta": false
+        },
+        "any_at_bound": false
+      }
+    }
+  ]
+}
