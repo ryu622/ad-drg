@@ -36,10 +36,10 @@ def initial_state(traj: Trajectory, k: int = 0) -> np.ndarray:
     return np.concatenate([traj.p_a[k] - traj.p_d[k], traj.v_a[k] - traj.v_d[k]])
 
 
-def baseline_features(traj: Trajectory) -> dict:
-    """初期フレームだけから計算できる単純な特徴量。"""
-    dp = traj.p_a[0] - traj.p_d[0]
-    dv = traj.v_a[0] - traj.v_d[0]
+def baseline_features(traj: Trajectory, k: int = 0) -> dict:
+    """フレームkの状態だけから計算できる単純な特徴量(デフォルトは初期フレーム)。"""
+    dp = traj.p_a[k] - traj.p_d[k]
+    dv = traj.v_a[k] - traj.v_d[k]
     dist = float(np.linalg.norm(dp))
     closing = float(-(dp @ dv) / max(dist, 1e-6))  # 正なら接近中
     # 等速直線運動を仮定したときの、HORIZON 秒以内の最小距離
@@ -47,17 +47,17 @@ def baseline_features(traj: Trajectory) -> dict:
     min_dist_cv = float(np.linalg.norm(dp + dv * t_star))
     e_g = goal_axis(traj)
     # 守備者が攻撃者から見てゴール方向にどれだけ寄っているか(cos)
-    to_def = traj.p_d[0] - traj.p_a[0]
+    to_def = traj.p_d[k] - traj.p_a[k]
     goal_side_cos = float(to_def @ e_g / max(np.linalg.norm(to_def), 1e-6))
     return dict(
         dist0=dist,
         closing_speed=closing,
         rel_speed=float(np.linalg.norm(dv)),
-        atk_speed=float(np.linalg.norm(traj.v_a[0])),
-        def_speed=float(np.linalg.norm(traj.v_d[0])),
+        atk_speed=float(np.linalg.norm(traj.v_a[k])),
+        def_speed=float(np.linalg.norm(traj.v_d[k])),
         min_dist_cv=min_dist_cv,
         goal_side_cos=goal_side_cos,
-        dist_to_goal=float(np.linalg.norm(traj.goal - traj.p_a[0])),
+        dist_to_goal=float(np.linalg.norm(traj.goal - traj.p_a[k])),
     )
 
 
