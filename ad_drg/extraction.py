@@ -52,6 +52,33 @@ class Trajectory:
     atk_displacement: float
     def_displacement: float
     outcome: str | None  # "captured" | "evaded" | None(次のセグメントが取得できない)
+    frame_idx: np.ndarray | None = None  # (N,) MatchTrack 上のフレーム番号(フェーズ13以降)
+    ball: np.ndarray | None = None  # (N, 2) m: ボール位置(フェーズ13以降)
+    attacker_team: str | None = None
+
+
+@dataclass
+class MatchTrack:
+    """試合全体(ボールインプレー中のフレーム)のボール軌跡と保持チーム。
+
+    1対1区間の後に何が起きたか(シュート・PA進入・前進)を判定するために使う(フェーズ13)。
+    """
+
+    match_id: str
+    fps: float
+    period: np.ndarray  # (M,) int
+    t: np.ndarray  # (M,) s: ピリオド内の経過時間(イベントデータの timestamp と同じ基準)
+    ball: np.ndarray  # (M, 2) m
+    owning_team: np.ndarray  # (M,) str(保持チーム不明は "")
+    home_attacks_ltr: np.ndarray  # (M,) bool
+    home_team: str
+    pitch_length: float
+    pitch_width: float
+
+    def goal_of(self, team_id: str, k: int) -> np.ndarray:
+        """フレームkで team_id が攻めるゴールの中心座標。"""
+        ltr = self.home_attacks_ltr[k] if team_id == self.home_team else not self.home_attacks_ltr[k]
+        return np.array([self.pitch_length if ltr else 0.0, self.pitch_width * GOAL_Y_FRAC])
 
 
 def _frame_positions_m(frame, pitch_length: float, pitch_width: float) -> dict[str, np.ndarray]:
@@ -89,11 +116,11 @@ def _path_length(pos: np.ndarray) -> float:
     return float(np.linalg.norm(np.diff(pos, axis=0), axis=1).sum())
 
 
-def build_trajectories(match_id: str, min_displacement: float = MIN_DISPLACEMENT) -> list[Trajectory]:
+def build_trajectories(match_id: str, min_displacement: float = MIN_DISPLACEMENT, return_track: bool = False):
     """1試合分のトラッキングデータから1対1ドリブル軌道のリストを構築する。
 
     min_displacement は基準(iii)のしきい値で、経路長(atk_path_length /
-    def_path_length)に対して適用する。
+    def_path_length)に対して適用する。return_track=True なら (軌道のリスト, MatchTrack) を返す。
     """
     tracking = sportec.load_open_tracking_data(match_id=match_id, only_alive=True)
     fps = tracking.metadata.frame_rate
@@ -103,45 +130,63 @@ def build_trajectories(match_id: str, min_displacement: float = MIN_DISPLACEMENT
     team_by_player = {p.player_id: team.team_id for team in tracking.metadata.teams for p in team.players}
     ground_by_team = {team.team_id: team.ground for team in tracking.metadata.teams}
 
-    segments: list[tuple[str, list, AttackingDirection]] = []
+    segments: list[tuple[str, list, AttackingDirection, list, list]] = []
     cur_carrier, cur_frames, cur_dir = None, [], None
+    cur_idx, cur_ball = [], []
+    home_team = next(team.team_id for team in tracking.metadata.teams if team.ground == Ground.HOME)
+    track_period, track_t, track_ball, track_owner, track_ltr = [], [], [], [], []
 
     def flush():
         if cur_carrier is not None and len(cur_frames) >= 2:
-            segments.append((cur_carrier, cur_frames, cur_dir))
+            segments.append((cur_carrier, cur_frames, cur_dir, cur_idx, cur_ball))
 
-    for frame in tracking.records:
+    for frame_i, frame in enumerate(tracking.records):
+        track_period.append(frame.period.id)
+        track_t.append(frame.timestamp.total_seconds())
+        track_ltr.append(frame.attacking_direction == AttackingDirection.LTR)
+        track_owner.append(frame.ball_owning_team.team_id if frame.ball_owning_team is not None else "")
+        if frame.ball_coordinates is not None:
+            track_ball.append([frame.ball_coordinates.x * pitch_length, frame.ball_coordinates.y * pitch_width])
+        else:
+            track_ball.append([np.nan, np.nan])
         if frame.ball_coordinates is None or frame.ball_state != BallState.ALIVE:
             flush()
             cur_carrier, cur_frames, cur_dir = None, [], None
+            cur_idx, cur_ball = [], []
             continue
         owning_team = frame.ball_owning_team
         pos = _frame_positions_m(frame, pitch_length, pitch_width)
         if owning_team is None or not pos:
             flush()
             cur_carrier, cur_frames, cur_dir = None, [], None
+            cur_idx, cur_ball = [], []
             continue
         ball_xy = np.array([frame.ball_coordinates.x * pitch_length, frame.ball_coordinates.y * pitch_width])
         candidates = [(pid, xy) for pid, xy in pos.items() if team_by_player.get(pid) == owning_team.team_id]
         if not candidates:
             flush()
             cur_carrier, cur_frames, cur_dir = None, [], None
+            cur_idx, cur_ball = [], []
             continue
         carrier_id, carrier_xy = min(candidates, key=lambda kv: np.linalg.norm(kv[1] - ball_xy))
         if np.linalg.norm(carrier_xy - ball_xy) > MAX_CARRIER_DIST:
             flush()
             cur_carrier, cur_frames, cur_dir = None, [], None
+            cur_idx, cur_ball = [], []
             continue
         if carrier_id != cur_carrier:
             flush()
             cur_carrier = carrier_id
             cur_frames = []
+            cur_idx, cur_ball = [], []
             cur_dir = frame.attacking_direction
         cur_frames.append(pos)
+        cur_idx.append(frame_i)
+        cur_ball.append(ball_xy)
     flush()
 
     trajectories = []
-    for seg_idx, (carrier_id, frames, atk_dir) in enumerate(segments):
+    for seg_idx, (carrier_id, frames, atk_dir, frame_idx, ball_seg) in enumerate(segments):
         duration = len(frames) / fps
         if duration <= MIN_DURATION:
             continue
@@ -206,6 +251,23 @@ def build_trajectories(match_id: str, min_displacement: float = MIN_DISPLACEMENT
                 atk_displacement=atk_disp,
                 def_displacement=def_disp,
                 outcome=outcome,
+                frame_idx=np.array(frame_idx),
+                ball=np.array(ball_seg),
+                attacker_team=attacker_team,
             )
         )
-    return trajectories
+    if not return_track:
+        return trajectories
+    track = MatchTrack(
+        match_id=match_id,
+        fps=fps,
+        period=np.array(track_period),
+        t=np.array(track_t),
+        ball=np.array(track_ball),
+        owning_team=np.array(track_owner),
+        home_attacks_ltr=np.array(track_ltr),
+        home_team=home_team,
+        pitch_length=pitch_length,
+        pitch_width=pitch_width,
+    )
+    return trajectories, track
