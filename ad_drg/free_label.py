@@ -93,3 +93,70 @@ def free_label(traj: Trajectory, prm: FreeParams, horizon: float = 3.0, min_free
             t_free = (k - k_eng) * traj.dt
             break
     return dict(engaged=True, k_eng=k_eng, freed=t_free is not None, t_free=t_free)
+
+
+CATEGORIES = ("forward_free", "escape_free", "release", "contained")
+CATEGORY_JA = {
+    "forward_free": "前へ外した",
+    "escape_free": "横・後ろへ逃げた",
+    "release": "すぐはたいた",
+    "contained": "外せなかった",
+}
+
+
+def goalward_speed(traj: Trajectory) -> np.ndarray:
+    """各フレームの攻撃者速度のゴール方向成分 [m/s](ボール位置からゴール中心への方向)。"""
+    g = traj.goal[None, :] - traj.ball
+    g = g / np.maximum(np.linalg.norm(g, axis=1, keepdims=True), 1e-9)
+    return np.einsum("ij,ij->i", traj.v_a, g)
+
+
+def classify_duel(
+    traj: Trajectory,
+    prm: FreeParams,
+    horizon: float = 3.0,
+    min_free: float = 0.2,
+    fwd_thr: float = 1.0,
+    release_s: float = 0.5,
+) -> dict:
+    """1対1の結末を4分類する(フェーズ14)。優先順位の高い順に:
+
+    forward_free : 開始から horizon 秒以内に、攻撃者がゴール方向に fwd_thr m/s 以上で進みながら
+                   「外した」状態が min_free 秒以上続いた
+    escape_free  : 「外した」状態にはなったが、ゴール方向に進んでいなかった
+    release      : 外せないまま、開始から release_s 秒以内にセグメントが終わった(すぐパス・ロスト)
+    contained    : 外せないまま、release_s 秒以上ボールを持ち続けた(仕掛けたが外せなかった)
+
+    あわせて、開始から horizon 秒以内に「ゴール方向に fwd_thr 以上で min_free 秒以上進んだか」
+    (went_forward)を返す。forward_free と「前に進んだが外せなかった」を比べる対照用。
+    """
+    acc = defender_access(traj, prm)
+    reach = np.nonzero(acc["ball_reach"])[0]
+    if not len(reach):
+        return dict(engaged=False)
+    k_eng = int(reach[0])
+    n_end = min(len(traj.ball), k_eng + int(round(horizon / traj.dt)) + 1)
+    k_min = max(1, int(round(min_free / traj.dt)))
+    fwd = goalward_speed(traj) >= fwd_thr
+    free = acc["free"]
+
+    def first_run(mask):
+        for k in range(k_eng, n_end):
+            if k + k_min <= len(mask) and mask[k: k + k_min].all():
+                return k
+        return None
+
+    k_ff = first_run(free & fwd)
+    k_free = first_run(free)
+    went_forward = first_run(fwd) is not None
+    remaining = (len(traj.ball) - 1 - k_eng) * traj.dt
+    if k_ff is not None:
+        cat, k_evt = "forward_free", k_ff
+    elif k_free is not None:
+        cat, k_evt = "escape_free", k_free
+    elif remaining < release_s:
+        cat, k_evt = "release", None
+    else:
+        cat, k_evt = "contained", None
+    return dict(engaged=True, k_eng=k_eng, category=cat, k_event=k_evt, went_forward=went_forward,
+                remaining_after_onset=remaining)
